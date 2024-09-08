@@ -1,0 +1,22 @@
+[package]
+name = "RustSerialTool"
+version = "0.0.1"
+description = "A Rust Serial Tauri App"
+authors = ["liyang"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.5.4", features = [] }
+
+[dependencies]
+tauri = { version = "1.7.2", features = ["shell-open"] }
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+serialport = "4.5.0"
+tokio = {version = "1.40.0", features = ["full"] }
+
+[features]
+# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]
