@@ -17,7 +17,7 @@
         <InputConfig></InputConfig>
       </div>
       <div class="w-1.5 h-full bg-gray-100"></div>
-      <div class="flex flex-col w-full items-center justify-around">
+      <div class="flex flex-col w-full items-center">
         <OutputArea></OutputArea>
         <div class="w-full h-1 bg-gray-100"></div>
         <InputArea></InputArea>
